@@ -1,0 +1,35 @@
+[build]
+  publish = "."
+  command = "echo 'Static site - no build needed'"
+
+# Handle clean URLs for HTML files
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/programs"
+  to = "/programs.html"
+  status = 200
+
+[[redirects]]
+  from = "/events"
+  to = "/events.html"
+  status = 200
+
+[[redirects]]
+  from = "/gallery"
+  to = "/gallery.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+# Handle 404s - redirect to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404

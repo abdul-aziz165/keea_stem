@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - K.E.E.A STEM</title>
+    <meta name="description" content="Discover upcoming and past STEM events, workshops, competitions, and community gatherings.">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <i class="fas fa-atom"></i>
+                    <span>K.E.E.A STEM</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/about" class="nav-link">About</a></li>
+                    <li><a href="/programs" class="nav-link">Programs</a></li>
+                    <li><a href="/events" class="nav-link active">Events</a></li>
+                    <li><a href="/gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="/contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Events & Activities</h1>
+                <p>Join us for exciting STEM events, workshops, and community gatherings</p>
+            </div>
+        </section>
+
+        <!-- Event Categories -->
+        <section class="event-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Events</button>
+                    <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+                    <button class="filter-btn" data-filter="workshops">Workshops</button>
+                    <button class="filter-btn" data-filter="competitions">Competitions</button>
+                    <button class="filter-btn" data-filter="community">Community</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section class="events">
+            <div class="container">
+                <h2 class="section-title1">Upcoming Events</h2>
+                <div class="events-grid">
+                    <!-- Featured Event -->
+                    <div class="event-card featured" data-category="upcoming workshops">
+                        <div class="event-image">
+                            <img src="images/stem33.jpg" alt="Advanced Robotics Workshop">
+                            <div class="event-badge">Featured</div>
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span class="event-date">
+                                    <i class="fas fa-calendar"></i>
+                                    December 15-17, 2025
+                                </span>
+                                <span class="event-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    UCC Engineering Lab
+                                </span>
+                            </div>
+                            <h3>Advanced Robotics Workshop</h3>
+                            <p>Three-day intensive workshop on advanced robotics concepts including machine learning integration, computer vision, and autonomous navigation systems.</p>
+                            <div class="event-details">
+                                <span class="event-category">Workshop</span>
+                                <span class="event-price">Free</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Regular Events -->
+                    <div class="event-card" data-category="upcoming competitions">
+                        <div class="event-image">
+                            <img src="images/stem32.jpg" alt="National Coding Challenge">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span class="event-date">
+                                    <i class="fas fa-calendar"></i>
+                                    March 22, 2024
+                                </span>
+                                <span class="event-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Online
+                                </span>
+                            </div>
+                            <h3>National Coding Challenge</h3>
+                            <p>Test your programming skills in this nationwide competition featuring algorithmic challenges and real-world problem solving.</p>
+                            <div class="event-details">
+                                <span class="event-category">Competition</span>
+                                <span class="event-price">Free</span>
+                            </div>
+                            <div class="event-footer">
+                                <span class="event-capacity">
+                                    <i class="fas fa-users"></i>
+                                    Open Registration
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-category="upcoming community">
+                        <div class="event-image">
+                            <img src="images/stem36.jpg" alt="STEM Career Expo">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span class="event-date">
+                                    <i class="fas fa-calendar"></i>
+                                    April 5, 2024
+                                </span>
+                                <span class="event-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Elmina Cultural Center
+                                </span>
+                            </div>
+                            <h3>STEM Career Expo</h3>
+                            <p>Meet industry professionals, explore career paths, and discover opportunities in various STEM fields. Perfect for students planning their future.</p>
+                            <div class="event-details">
+                                <span class="event-category">Community</span>
+                                <span class="event-price">Free</span>
+                            </div>
+                            <div class="event-footer">
+                                <span class="event-capacity">
+                                    <i class="fas fa-users"></i>
+                                    500+ expected
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-category="upcoming workshops">
+                        <div class="event-image">
+                            <img src="images/stem30.jpg" alt="AI for Beginners">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span class="event-date">
+                                    <i class="fas fa-calendar"></i>
+                                    April 12-13, 2024
+                                </span>
+                                <span class="event-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    KEEA Tech Hub
+                                </span>
+                            </div>
+                            <h3>AI for Beginners</h3>
+                            <p>Introduction to artificial intelligence concepts, basic machine learning, and hands-on projects with Python and popular AI libraries.</p>
+                            <div class="event-details">
+                                <span class="event-category">Workshop</span>
+                            </div>
+                            <div class="event-footer">
+                                <span class="event-capacity">
+                                    <i class="fas fa-users"></i>
+                                    15 spots left
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-category="upcoming workshops">
+                        <div class="event-image">
+                            <img src="images/stem31.jpg" alt="3D Printing Workshop">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span class="event-date">
+                                    <i class="fas fa-calendar"></i>
+                                    April 20, 2024
+                                </span>
+                                <span class="event-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Maker Space Lab
+                                </span>
+                            </div>
+                            <h3>3D Printing & Design</h3>
+                            <p>Learn 3D modeling and printing techniques. Design your own objects and see them come to life with cutting-edge 3D printing technology.</p>
+                            <div class="event-details">
+                                <span class="event-category">Workshop</span>
+                            </div>
+                            <div class="event-footer">
+                                <span class="event-capacity">
+                                    <i class="fas fa-users"></i>
+                                    20 spots available
+                                </span>
+                                <button class="btn btn-primary btn-sm">Register</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-card" data-category="upcoming community">
+                        <div class="event-image">
+                            <img src="images/international girl.jpg" alt="Women in STEM Panel">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span class="event-date">
+                                    <i class="fas fa-calendar"></i>
+                                    May 8, 2024
+                                </span>
+                                <span class="event-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Cape Coast Auditorium
+                                </span>
+                            </div>
+                            <h3>Women in STEM Panel</h3>
+                            <p>Inspiring panel discussion featuring successful women in STEM fields, sharing their journeys, challenges, and advice for the next generation.</p>
+                            <div class="event-details">
+                                <span class="event-category">Community</span>
+                                <span class="event-price">Free</span>
+                            </div>
+                            <div class="event-footer">
+                                <span class="event-capacity">
+                                    <i class="fas fa-users"></i>
+                                    200 seats
+                                </span>
+                                <button class="btn btn-primary btn-sm">RSVP</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Events -->
+        <section class="past-events">
+            <div class="container">
+                <h2 class="section-title1">Recent Events</h2>
+                <div class="past-events-grid">
+                    <div class="past-event-card">
+                        <div class="past-event-image">
+                            <img src="images/international girl.jpg" alt="2023 Science Fair">
+                        </div>
+                        <div class="past-event-content">
+                            <h4>INTERNATIONAL DAY FOR GIRLS AND WOMEN IN SCIENCE</h4>
+                            <p class="past-event-date">February 11, 2025</p>
+                            <p>On February 11, 2025, the KEEA Municipal Education Directorate marked the International Day for Girls and Women in Science under the theme “Her Voice in Science.”</p>
+                            <a href="gallery.html" class="past-event-link">View Gallery <i class="fas fa-arrow-right"></i></a>
+                            <a href="/gallery" class="past-event-link">View Gallery <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="past-event-card">
+                        <div class="past-event-image">
+                            <img src="images/stem9.jpg" alt="Code for Change Hackathon">
+                        </div>
+                        <div class="past-event-content">
+                            <h4>2024 KOICA STEM Camp</h4>
+                            <p class="past-event-date">December 20-24, 2024</p>
+                            <p>The 2024 KOICA STEM Gender Camp at the University of Cape Coast, bringing together 250 learners from schools across KEEA to engage, explore, and be inspired in the world of Science, Technology, Engineering, and Mathematics (STEM).</p>
+                        </div>
+                    </div>
+                    <div class="past-event-card">
+                        <div class="past-event-image">
+                            <img src="images/stem32.jpg" alt="Python Programming Workshop">
+                        </div>
+                        <div class="past-event-content">
+                            <h4>Python Programming Intensive</h4>
+                            <p class="past-event-date">September 2-30, 2023</p>
+                            <p>Month-long intensive program that trained 50 students in Python programming and data analysis fundamentals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Newsletter -->
+        <section class="event-newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Updated on Events</h2>
+                    <p>Make sure to follow us on all our social media handled to receive notifications about upcoming events, workshops, and special programs.</p>
+                    <div class="social-links" >
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-atom"></i>
+                        <span>K.E.E.A STEM</span>
+                    </div>
+                    <p>Empowering the next generation through innovative STEM education and hands-on learning experiences.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/programs">Programs</a></li>
+                        <li><a href="/events">Events</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="/programs">Coding Bootcamp</a></li>
+                        <li><a href="/programs">Robotics Workshop</a></li>
+                        <li><a href="/programs">Science Fair</a></li>
+                        <li><a href="/programs">Math Olympiad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +233 123 456 789</p>
+                        <p><i class="fas fa-envelope"></i> info@stemfuture.org</p>
+                        <p><i class="fas fa-map-marker-alt"></i> KEEA District, Central Region</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 K.E.E.A STEM. All rights reserved | Powered by ODM</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

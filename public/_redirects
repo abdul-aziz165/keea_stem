@@ -1,0 +1,9 @@
+# Clean URLs for HTML files
+/about    /about.html    200
+/programs /programs.html 200
+/events   /events.html   200
+/gallery  /gallery.html  200
+/contact  /contact.html  200
+
+# Fallback to index.html for any other routes
+/*        /index.html    404

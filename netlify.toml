@@ -1,35 +1,30 @@
 [build]
-  publish = "."
-  command = "echo 'Static site - no build needed'"
+  command = "npm run build"   
+  publish = "dist"          
 
-# Handle clean URLs for HTML files
+# Clean URL redirects (200 rewrites)
 [[redirects]]
   from = "/about"
   to = "/about.html"
-  status = 200
 
 [[redirects]]
   from = "/programs"
   to = "/programs.html"
-  status = 200
 
 [[redirects]]
   from = "/events"
   to = "/events.html"
-  status = 200
 
 [[redirects]]
   from = "/gallery"
   to = "/gallery.html"
-  status = 200
 
 [[redirects]]
   from = "/contact"
   to = "/contact.html"
-  status = 200
 
-# Handle 404s - redirect to index.html
+# SPA fallback (200 rewrite)
 [[redirects]]
   from = "/*"
   to = "/index.html"
-  status = 404
+  status = 200                

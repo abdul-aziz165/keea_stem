@@ -2,27 +2,6 @@
   command = "npm run build"   
   publish = "dist"          
 
-# Clean URL redirects (200 rewrites)
-[[redirects]]
-  from = "/about"
-  to = "/about.html"
-
-[[redirects]]
-  from = "/programs"
-  to = "/programs.html"
-
-[[redirects]]
-  from = "/events"
-  to = "/events.html"
-
-[[redirects]]
-  from = "/gallery"
-  to = "/gallery.html"
-
-[[redirects]]
-  from = "/contact"
-  to = "/contact.html"
-
 # SPA fallback (200 rewrite)
 [[redirects]]
   from = "/*"
